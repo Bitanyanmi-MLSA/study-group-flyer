@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Ambassadors Study Group Campaign</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #ddd; font-family: "Segoe UI", Arial, sans-serif; }
+  .flyer {
+    width: 210mm; height: 297mm; margin: 0 auto; position: relative; overflow: hidden;
+    background: linear-gradient(160deg, #0b1f3a 0%, #0078d4 100%);
+    color: #fff; padding: 16mm; display: flex; flex-direction: column;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .flyer::before { content: ""; position: absolute; width: 130mm; height: 130mm; right: -45mm; top: -45mm;
+    border-radius: 50%; background: rgba(255,255,255,.1); }
+  .flyer > * { position: relative; z-index: 1; }
+  .logo { display: grid; grid-template-columns: repeat(2, 7mm); gap: 1mm; width: 15mm; }
+  .logo i { width: 7mm; height: 7mm; display: block; }
+  .top { display: flex; align-items: center; gap: 4mm; }
+  .top b { font-size: 13pt; letter-spacing: 1px; }
+  .top small { display: block; font-size: 9pt; opacity: .85; letter-spacing: 0; font-weight: 400; }
+  .tag { margin-top: 12mm; align-self: flex-start; background: #ffb900; color: #0b1f3a;
+    padding: 2mm 5mm; border-radius: 20px; font-weight: 800; font-size: 12pt; }
+  h1 { font-size: 46pt; line-height: 1.02; margin: 6mm 0 4mm; font-weight: 900; }
+  h1 span { color: #ffb900; }
+  .sub { font-size: 15pt; max-width: 150mm; opacity: .95; }
+  .features { margin-top: 10mm; display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .card { background: rgba(255,255,255,.13); border: 1px solid rgba(255,255,255,.28);
+    border-radius: 4mm; padding: 4.5mm; }
+  .card b { display: block; color: #ffb900; font-size: 13pt; margin-bottom: 1mm; }
+  .card p { font-size: 10.5pt; }
+  .certs { margin-top: 8mm; font-size: 11pt; }
+  .certs span { display: inline-block; background: #fff; color: #0b1f3a; font-weight: 700;
+    border-radius: 3mm; padding: 1mm 3mm; margin: 1mm 1mm 0 0; font-size: 10pt; }
+  .event { margin-top: auto; background: #fff; color: #0b1f3a; border-radius: 5mm; padding: 6mm 7mm;
+    display: flex; gap: 7mm; align-items: center; }
+  .date { background: #0078d4; color: #fff; border-radius: 4mm; padding: 4mm 6mm; text-align: center; }
+  .date .d { font-size: 38pt; font-weight: 900; line-height: 1; }
+  .date .m { font-size: 12pt; font-weight: 700; }
+  .event h3 { font-size: 16pt; margin-bottom: 1.5mm; }
+  .event p { font-size: 11.5pt; line-height: 1.5; }
+  .cta { margin-top: 6mm; text-align: center; font-size: 17pt; font-weight: 800; color: #ffb900; }
+  .foot { margin-top: 2mm; text-align: center; font-size: 10pt; opacity: .85; }
+  .reg { display:flex; align-items:center; gap:6mm; margin-top:6mm; }
+  .reg img { width:34mm; height:34mm; background:#fff; padding:2mm; border-radius:3mm; }
+  .reg .cta { margin:0; text-align:left; font-size:16pt; }
+  .reg .link { font-size:13pt; font-weight:700; margin-top:1.5mm; }
+  .reg .foot { text-align:left; margin-top:1.5mm; }
+  @media print { body { background: none; } }
+</style>
+</head>
+<body>
+<div class="flyer">
+  <div class="top">
+    <div class="logo"><i style="background:#f25022"></i><i style="background:#7fba00"></i><i style="background:#00a4ef"></i><i style="background:#ffb900"></i></div>
+    <b>MICROSOFT LEARN STUDENT AMBASSADORS<small>Tamale Technical University</small></b>
+  </div>
+
+  <div class="tag">STUDY GROUP CAMPAIGN 2026</div>
+  <h1>Get <span>Microsoft Certified.</span><br>Together.</h1>
+  <p class="sub">Preparing for a Microsoft certification exam? Join the Student Ambassadors Study Group and learn alongside motivated peers — beginners welcome!</p>
+
+  <div class="features">
+    <div class="card"><b>Guided Study Sessions</b><p>Follow structured Microsoft Learn paths with Ambassador mentors.</p></div>
+    <div class="card"><b>Peer Support</b><p>Share notes, solve questions and stay accountable as a team.</p></div>
+    <div class="card"><b>Exam Readiness</b><p>Practice questions and tips to walk into your exam with confidence.</p></div>
+    <div class="card"><b>Career Boost</b><p>Earn industry-recognised credentials that stand out on your CV.</p></div>
+  </div>
+
+  <div class="certs"><b>Popular exams:</b><br>
+    <span>AZ-900 Azure Fundamentals</span><span>AI-900 AI Fundamentals</span><span>DP-900 Data Fundamentals</span><span>SC-900 Security Fundamentals</span><span>PL-900 Power Platform</span>
+  </div>
+
+  <div class="event">
+    <div class="date"><div class="d">27</div><div class="m">NOV 2026</div></div>
+    <div>
+      <h3>In-Person Kick-off Meeting</h3>
+      <p>📅 Friday, 27th November 2026<br>
+         ⏰ 9:00 AM &nbsp;|&nbsp; 📍 ICT Conference Room, Tamale Technical University</p>
+    </div>
+  </div>
+
+  <div class="reg"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPHN2ZyB3aWR0aD0iMzVtbSIgaGVpZ2h0PSIzNW1tIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzNSAzNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMSwxSDJWMkgxek0yLDFIM1YySDJ6TTMsMUg0VjJIM3pNNCwxSDVWMkg0ek01LDFINlYySDV6TTYsMUg3VjJINnpNNywxSDhWMkg3ek0xMiwxSDEzVjJIMTJ6TTE3LDFIMThWMkgxN3pNMjAsMUgyMVYySDIwek0yMSwxSDIyVjJIMjF6TTIyLDFIMjNWMkgyMnpNMjMsMUgyNFYySDIzek0yNCwxSDI1VjJIMjR6TTI3LDFIMjhWMkgyN3pNMjgsMUgyOVYySDI4ek0yOSwxSDMwVjJIMjl6TTMwLDFIMzFWMkgzMHpNMzEsMUgzMlYySDMxek0zMiwxSDMzVjJIMzJ6TTMzLDFIMzRWMkgzM3pNMSwySDJWM0gxek03LDJIOFYzSDd6TTEyLDJIMTNWM0gxMnpNMTMsMkgxNFYzSDEzek0xNiwySDE3VjNIMTZ6TTE3LDJIMThWM0gxN3pNMjIsMkgyM1YzSDIyek0yNSwySDI2VjNIMjV6TTI3LDJIMjhWM0gyN3pNMzMsMkgzNFYzSDMzek0xLDNIMlY0SDF6TTMsM0g0VjRIM3pNNCwzSDVWNEg0ek01LDNINlY0SDV6TTcsM0g4VjRIN3pNOSwzSDEwVjRIOXpNMTEsM0gxMlY0SDExek0xMiwzSDEzVjRIMTJ6TTE1LDNIMTZWNEgxNXpNMTYsM0gxN1Y0SDE2ek0xNywzSDE4VjRIMTd6TTIxLDNIMjJWNEgyMXpNMjIsM0gyM1Y0SDIyek0yNCwzSDI1VjRIMjR6TTI3LDNIMjhWNEgyN3pNMjksM0gzMFY0SDI5ek0zMCwzSDMxVjRIMzB6TTMxLDNIMzJWNEgzMXpNMzMsM0gzNFY0SDMzek0xLDRIMlY1SDF6TTMsNEg0VjVIM3pNNCw0SDVWNUg0ek01LDRINlY1SDV6TTcsNEg4VjVIN3pNOSw0SDEwVjVIOXpNMTEsNEgxMlY1SDExek0xMiw0SDEzVjVIMTJ6TTE2LDRIMTdWNUgxNnpNMTgsNEgxOVY1SDE4ek0yMCw0SDIxVjVIMjB6TTI0LDRIMjVWNUgyNHpNMjcsNEgyOFY1SDI3ek0yOSw0SDMwVjVIMjl6TTMwLDRIMzFWNUgzMHpNMzEsNEgzMlY1SDMxek0zMyw0SDM0VjVIMzN6TTEsNUgyVjZIMXpNMyw1SDRWNkgzek00LDVINVY2SDR6TTUsNUg2VjZINXpNNyw1SDhWNkg3ek05LDVIMTBWNkg5ek0xMCw1SDExVjZIMTB6TTEyLDVIMTNWNkgxMnpNMTMsNUgxNFY2SDEzek0xNSw1SDE2VjZIMTV6TTE2LDVIMTdWNkgxNnpNMTcsNUgxOFY2SDE3ek0yMCw1SDIxVjZIMjB6TTIxLDVIMjJWNkgyMXpNMjQsNUgyNVY2SDI0ek0yNyw1SDI4VjZIMjd6TTI5LDVIMzBWNkgyOXpNMzAsNUgzMVY2SDMwek0zMSw1SDMyVjZIMzF6TTMzLDVIMzRWNkgzM3pNMSw2SDJWN0gxek03LDZIOFY3SDd6TTksNkgxMFY3SDl6TTEwLDZIMTFWN0gxMHpNMTIsNkgxM1Y3SDEyek0xNCw2SDE1VjdIMTR6TTE4LDZIMTlWN0gxOHpNMTksNkgyMFY3SDE5ek0yMiw2SDIzVjdIMjJ6TTI3LDZIMjhWN0gyN3pNMzMsNkgzNFY3SDMzek0xLDdIMlY4SDF6TTIsN0gzVjhIMnpNMyw3SDRWOEgzek00LDdINVY4SDR6TTUsN0g2VjhINXpNNiw3SDdWOEg2ek03LDdIOFY4SDd6TTksN0gxMFY4SDl6TTExLDdIMTJWOEgxMXpNMTMsN0gxNFY4SDEzek0xNSw3SDE2VjhIMTV6TTE3LDdIMThWOEgxN3pNMTksN0gyMFY4SDE5ek0yMSw3SDIyVjhIMjF6TTIzLDdIMjRWOEgyM3pNMjUsN0gyNlY4SDI1ek0yNyw3SDI4VjhIMjd6TTI4LDdIMjlWOEgyOHpNMjksN0gzMFY4SDI5ek0zMCw3SDMxVjhIMzB6TTMxLDdIMzJWOEgzMXpNMzIsN0gzM1Y4SDMyek0zMyw3SDM0VjhIMzN6TTksOEgxMFY5SDl6TTEwLDhIMTFWOUgxMHpNMTIsOEgxM1Y5SDEyek0xNyw4SDE4VjlIMTd6TTIxLDhIMjJWOUgyMXpNMjIsOEgyM1Y5SDIyek0yMyw4SDI0VjlIMjN6TTEsOUgyVjEwSDF6TTMsOUg0VjEwSDN6TTQsOUg1VjEwSDR6TTUsOUg2VjEwSDV6TTYsOUg3VjEwSDZ6TTcsOUg4VjEwSDd6TTEyLDlIMTNWMTBIMTJ6TTEzLDlIMTRWMTBIMTN6TTE0LDlIMTVWMTBIMTR6TTE3LDlIMThWMTBIMTd6TTE4LDlIMTlWMTBIMTh6TTIzLDlIMjRWMTBIMjN6TTI1LDlIMjZWMTBIMjV6TTI3LDlIMjhWMTBIMjd6TTI4LDlIMjlWMTBIMjh6TTI5LDlIMzBWMTBIMjl6TTMwLDlIMzFWMTBIMzB6TTMxLDlIMzJWMTBIMzF6TTMsMTBINFYxMUgzek00LDEwSDVWMTFINHpNOSwxMEgxMFYxMUg5ek0xMiwxMEgxM1YxMUgxMnpNMTQsMTBIMTVWMTFIMTR6TTE3LDEwSDE4VjExSDE3ek0xOSwxMEgyMFYxMUgxOXpNMjAsMTBIMjFWMTFIMjB6TTIxLDEwSDIyVjExSDIxek0yNCwxMEgyNVYxMUgyNHpNMjcsMTBIMjhWMTFIMjd6TTI4LDEwSDI5VjExSDI4ek0zMCwxMEgzMVYxMUgzMHpNMzEsMTBIMzJWMTFIMzF6TTMzLDEwSDM0VjExSDMzek0xLDExSDJWMTJIMXpNNCwxMUg1VjEySDR6TTUsMTFINlYxMkg1ek02LDExSDdWMTJINnpNNywxMUg4VjEySDd6TTgsMTFIOVYxMkg4ek05LDExSDEwVjEySDl6TTEwLDExSDExVjEySDEwek0xMSwxMUgxMlYxMkgxMXpNMTIsMTFIMTNWMTJIMTJ6TTE0LDExSDE1VjEySDE0ek0xNSwxMUgxNlYxMkgxNXpNMTYsMTFIMTdWMTJIMTZ6TTE4LDExSDE5VjEySDE4ek0xOSwxMUgyMFYxMkgxOXpNMjEsMTFIMjJWMTJIMjF6TTIyLDExSDIzVjEySDIyek0yMywxMUgyNFYxMkgyM3pNMjcsMTFIMjhWMTJIMjd6TTI5LDExSDMwVjEySDI5ek0zMSwxMUgzMlYxMkgzMXpNMSwxMkgyVjEzSDF6TTQsMTJINVYxM0g0ek01LDEySDZWMTNINXpNMTEsMTJIMTJWMTNIMTF6TTEyLDEySDEzVjEzSDEyek0xNCwxMkgxNVYxM0gxNHpNMTYsMTJIMTdWMTNIMTZ6TTE5LDEySDIwVjEzSDE5ek0yMSwxMkgyMlYxM0gyMXpNMjIsMTJIMjNWMTNIMjJ6TTIzLDEySDI0VjEzSDIzek0yNSwxMkgyNlYxM0gyNXpNMjYsMTJIMjdWMTNIMjZ6TTI5LDEySDMwVjEzSDI5ek0zMCwxMkgzMVYxM0gzMHpNMzEsMTJIMzJWMTNIMzF6TTMyLDEySDMzVjEzSDMyek0zMywxMkgzNFYxM0gzM3pNMiwxM0gzVjE0SDJ6TTYsMTNIN1YxNEg2ek03LDEzSDhWMTRIN3pNMTAsMTNIMTFWMTRIMTB6TTE1LDEzSDE2VjE0SDE1ek0xNywxM0gxOFYxNEgxN3pNMTgsMTNIMTlWMTRIMTh6TTE5LDEzSDIwVjE0SDE5ek0yMCwxM0gyMVYxNEgyMHpNMjEsMTNIMjJWMTRIMjF6TTIzLDEzSDI0VjE0SDIzek0yOSwxM0gzMFYxNEgyOXpNMzAsMTNIMzFWMTRIMzB6TTMyLDEzSDMzVjE0SDMyek0zMywxM0gzNFYxNEgzM3pNMiwxNEgzVjE1SDJ6TTMsMTRINFYxNUgzek00LDE0SDVWMTVINHpNNSwxNEg2VjE1SDV6TTYsMTRIN1YxNUg2ek04LDE0SDlWMTVIOHpNOSwxNEgxMFYxNUg5ek0xMiwxNEgxM1YxNUgxMnpNMTMsMTRIMTRWMTVIMTN6TTE0LDE0SDE1VjE1SDE0ek0xNiwxNEgxN1YxNUgxNnpNMTksMTRIMjBWMTVIMTl6TTIwLDE0SDIxVjE1SDIwek0yMSwxNEgyMlYxNUgyMXpNMjIsMTRIMjNWMTVIMjJ6TTIzLDE0SDI0VjE1SDIzek0yNCwxNEgyNVYxNUgyNHpNMjcsMTRIMjhWMTVIMjd6TTMwLDE0SDMxVjE1SDMwek0zMiwxNEgzM1YxNUgzMnpNMzMsMTRIMzRWMTVIMzN6TTMsMTVINFYxNkgzek00LDE1SDVWMTZINHpNNiwxNUg3VjE2SDZ6TTcsMTVIOFYxNkg3ek04LDE1SDlWMTZIOHpNOSwxNUgxMFYxNkg5ek0xMSwxNUgxMlYxNkgxMXpNMTYsMTVIMTdWMTZIMTZ6TTE3LDE1SDE4VjE2SDE3ek0xOSwxNUgyMFYxNkgxOXpNMjEsMTVIMjJWMTZIMjF6TTIyLDE1SDIzVjE2SDIyek0yNiwxNUgyN1YxNkgyNnpNMjcsMTVIMjhWMTZIMjd6TTI4LDE1SDI5VjE2SDI4ek0zMCwxNUgzMVYxNkgzMHpNMzIsMTVIMzNWMTZIMzJ6TTEsMTZIMlYxN0gxek0zLDE2SDRWMTdIM3pNNSwxNkg2VjE3SDV6TTYsMTZIN1YxN0g2ek05LDE2SDEwVjE3SDl6TTEwLDE2SDExVjE3SDEwek0xMywxNkgxNFYxN0gxM3pNMTQsMTZIMTVWMTdIMTR6TTE1LDE2SDE2VjE3SDE1ek0xNiwxNkgxN1YxN0gxNnpNMjAsMTZIMjFWMTdIMjB6TTIyLDE2SDIzVjE3SDIyek0yMywxNkgyNFYxN0gyM3pNMjQsMTZIMjVWMTdIMjR6TTI2LDE2SDI3VjE3SDI2ek0yNywxNkgyOFYxN0gyN3pNMzAsMTZIMzFWMTdIMzB6TTMxLDE2SDMyVjE3SDMxek0xLDE3SDJWMThIMXpNNywxN0g4VjE4SDd6TTksMTdIMTBWMThIOXpNMTAsMTdIMTFWMThIMTB6TTE2LDE3SDE3VjE4SDE2ek0xOCwxN0gxOVYxOEgxOHpNMTksMTdIMjBWMThIMTl6TTIzLDE3SDI0VjE4SDIzek0yNCwxN0gyNVYxOEgyNHpNMjUsMTdIMjZWMThIMjV6TTI2LDE3SDI3VjE4SDI2ek0yOCwxN0gyOVYxOEgyOHpNMjksMTdIMzBWMThIMjl6TTMwLDE3SDMxVjE4SDMwek0zMywxN0gzNFYxOEgzM3pNMSwxOEgyVjE5SDF6TTMsMThINFYxOUgzek00LDE4SDVWMTlINHpNMTEsMThIMTJWMTlIMTF6TTEyLDE4SDEzVjE5SDEyek0xNCwxOEgxNVYxOUgxNHpNMTUsMThIMTZWMTlIMTV6TTE3LDE4SDE4VjE5SDE3ek0xOCwxOEgxOVYxOUgxOHpNMTksMThIMjBWMTlIMTl6TTIwLDE4SDIxVjE5SDIwek0yMSwxOEgyMlYxOUgyMXpNMjIsMThIMjNWMTlIMjJ6TTI0LDE4SDI1VjE5SDI0ek0yNywxOEgyOFYxOUgyN3pNMjgsMThIMjlWMTlIMjh6TTMwLDE4SDMxVjE5SDMwek0zMSwxOEgzMlYxOUgzMXpNMzMsMThIMzRWMTlIMzN6TTEsMTlIMlYyMEgxek0yLDE5SDNWMjBIMnpNNCwxOUg1VjIwSDR6TTYsMTlIN1YyMEg2ek03LDE5SDhWMjBIN3pNOCwxOUg5VjIwSDh6TTksMTlIMTBWMjBIOXpNMTAsMTlIMTFWMjBIMTB6TTExLDE5SDEyVjIwSDExek0xNSwxOUgxNlYyMEgxNXpNMTYsMTlIMTdWMjBIMTZ6TTE4LDE5SDE5VjIwSDE4ek0yMSwxOUgyMlYyMEgyMXpNMjUsMTlIMjZWMjBIMjV6TTI2LDE5SDI3VjIwSDI2ek0yNywxOUgyOFYyMEgyN3pNMjgsMTlIMjlWMjBIMjh6TTI5LDE5SDMwVjIwSDI5ek0zMSwxOUgzMlYyMEgzMXpNMzIsMTlIMzNWMjBIMzJ6TTEsMjBIMlYyMUgxek0yLDIwSDNWMjFIMnpNMywyMEg0VjIxSDN6TTQsMjBINVYyMUg0ek04LDIwSDlWMjFIOHpNMTAsMjBIMTFWMjFIMTB6TTExLDIwSDEyVjIxSDExek0xMywyMEgxNFYyMUgxM3pNMTUsMjBIMTZWMjFIMTV6TTE2LDIwSDE3VjIxSDE2ek0xNywyMEgxOFYyMUgxN3pNMjEsMjBIMjJWMjFIMjF6TTIyLDIwSDIzVjIxSDIyek0yNiwyMEgyN1YyMUgyNnpNMjgsMjBIMjlWMjFIMjh6TTI5LDIwSDMwVjIxSDI5ek0zMCwyMEgzMVYyMUgzMHpNMzEsMjBIMzJWMjFIMzF6TTMyLDIwSDMzVjIxSDMyek0xLDIxSDJWMjJIMXpNMiwyMUgzVjIySDJ6TTMsMjFINFYyMkgzek00LDIxSDVWMjJINHpNNSwyMUg2VjIySDV6TTcsMjFIOFYyMkg3ek04LDIxSDlWMjJIOHpNMTAsMjFIMTFWMjJIMTB6TTExLDIxSDEyVjIySDExek0xMiwyMUgxM1YyMkgxMnpNMTMsMjFIMTRWMjJIMTN6TTE2LDIxSDE3VjIySDE2ek0xOSwyMUgyMFYyMkgxOXpNMjAsMjFIMjFWMjJIMjB6TTIxLDIxSDIyVjIySDIxek0yMywyMUgyNFYyMkgyM3pNMjUsMjFIMjZWMjJIMjV6TTI2LDIxSDI3VjIySDI2ek0yOCwyMUgyOVYyMkgyOHpNMjksMjFIMzBWMjJIMjl6TTMwLDIxSDMxVjIySDMwek0zMywyMUgzNFYyMkgzM3pNMSwyMkgyVjIzSDF6TTIsMjJIM1YyM0gyek00LDIySDVWMjNINHpNNSwyMkg2VjIzSDV6TTYsMjJIN1YyM0g2ek04LDIySDlWMjNIOHpNOSwyMkgxMFYyM0g5ek0xMCwyMkgxMVYyM0gxMHpNMTQsMjJIMTVWMjNIMTR6TTE2LDIySDE3VjIzSDE2ek0xNywyMkgxOFYyM0gxN3pNMTgsMjJIMTlWMjNIMTh6TTE5LDIySDIwVjIzSDE5ek0yMCwyMkgyMVYyM0gyMHpNMjEsMjJIMjJWMjNIMjF6TTI0LDIySDI1VjIzSDI0ek0yNywyMkgyOFYyM0gyN3pNMzEsMjJIMzJWMjNIMzF6TTMzLDIySDM0VjIzSDMzek0xLDIzSDJWMjRIMXpNNCwyM0g1VjI0SDR6TTYsMjNIN1YyNEg2ek03LDIzSDhWMjRIN3pNOCwyM0g5VjI0SDh6TTEwLDIzSDExVjI0SDEwek0xNCwyM0gxNVYyNEgxNHpNMTgsMjNIMTlWMjRIMTh6TTIxLDIzSDIyVjI0SDIxek0yMywyM0gyNFYyNEgyM3pNMjUsMjNIMjZWMjRIMjV6TTMwLDIzSDMxVjI0SDMwek0zMiwyM0gzM1YyNEgzMnpNMSwyNEgyVjI1SDF6TTMsMjRINFYyNUgzek00LDI0SDVWMjVINHpNMTMsMjRIMTRWMjVIMTN6TTE3LDI0SDE4VjI1SDE3ek0xOSwyNEgyMFYyNUgxOXpNMjIsMjRIMjNWMjVIMjJ6TTI0LDI0SDI1VjI1SDI0ek0yNSwyNEgyNlYyNUgyNXpNMjcsMjRIMjhWMjVIMjd6TTMwLDI0SDMxVjI1SDMwek0zMSwyNEgzMlYyNUgzMXpNMzIsMjRIMzNWMjVIMzJ6TTMzLDI0SDM0VjI1SDMzek0xLDI1SDJWMjZIMXpNNCwyNUg1VjI2SDR6TTUsMjVINlYyNkg1ek03LDI1SDhWMjZIN3pNOSwyNUgxMFYyNkg5ek0xMSwyNUgxMlYyNkgxMXpNMTIsMjVIMTNWMjZIMTJ6TTEzLDI1SDE0VjI2SDEzek0xNywyNUgxOFYyNkgxN3pNMTgsMjVIMTlWMjZIMTh6TTIwLDI1SDIxVjI2SDIwek0yMywyNUgyNFYyNkgyM3pNMjUsMjVIMjZWMjZIMjV6TTI2LDI1SDI3VjI2SDI2ek0yNywyNUgyOFYyNkgyN3pNMjgsMjVIMjlWMjZIMjh6TTI5LDI1SDMwVjI2SDI5ek0zMCwyNUgzMVYyNkgzMHpNMzIsMjVIMzNWMjZIMzJ6TTksMjZIMTBWMjdIOXpNMTAsMjZIMTFWMjdIMTB6TTE3LDI2SDE4VjI3SDE3ek0xOCwyNkgxOVYyN0gxOHpNMTksMjZIMjBWMjdIMTl6TTIwLDI2SDIxVjI3SDIwek0yMiwyNkgyM1YyN0gyMnpNMjQsMjZIMjVWMjdIMjR6TTI1LDI2SDI2VjI3SDI1ek0yOSwyNkgzMFYyN0gyOXpNMzEsMjZIMzJWMjdIMzF6TTMzLDI2SDM0VjI3SDMzek0xLDI3SDJWMjhIMXpNMiwyN0gzVjI4SDJ6TTMsMjdINFYyOEgzek00LDI3SDVWMjhINHpNNSwyN0g2VjI4SDV6TTYsMjdIN1YyOEg2ek03LDI3SDhWMjhIN3pNMTAsMjdIMTFWMjhIMTB6TTExLDI3SDEyVjI4SDExek0xMiwyN0gxM1YyOEgxMnpNMTMsMjdIMTRWMjhIMTN6TTE0LDI3SDE1VjI4SDE0ek0xNiwyN0gxN1YyOEgxNnpNMTcsMjdIMThWMjhIMTd6TTE4LDI3SDE5VjI4SDE4ek0yMSwyN0gyMlYyOEgyMXpNMjIsMjdIMjNWMjhIMjJ6TTIzLDI3SDI0VjI4SDIzek0yNCwyN0gyNVYyOEgyNHpNMjUsMjdIMjZWMjhIMjV6TTI3LDI3SDI4VjI4SDI3ek0yOSwyN0gzMFYyOEgyOXpNMzEsMjdIMzJWMjhIMzF6TTMyLDI3SDMzVjI4SDMyek0xLDI4SDJWMjlIMXpNNywyOEg4VjI5SDd6TTksMjhIMTBWMjlIOXpNMTAsMjhIMTFWMjlIMTB6TTExLDI4SDEyVjI5SDExek0xMywyOEgxNFYyOUgxM3pNMTQsMjhIMTVWMjlIMTR6TTE2LDI4SDE3VjI5SDE2ek0xOCwyOEgxOVYyOUgxOHpNMTksMjhIMjBWMjlIMTl6TTIyLDI4SDIzVjI5SDIyek0yMywyOEgyNFYyOUgyM3pNMjQsMjhIMjVWMjlIMjR6TTI1LDI4SDI2VjI5SDI1ek0yOSwyOEgzMFYyOUgyOXpNMzAsMjhIMzFWMjlIMzB6TTMxLDI4SDMyVjI5SDMxek0zMywyOEgzNFYyOUgzM3pNMSwyOUgyVjMwSDF6TTMsMjlINFYzMEgzek00LDI5SDVWMzBINHpNNSwyOUg2VjMwSDV6TTcsMjlIOFYzMEg3ek05LDI5SDEwVjMwSDl6TTExLDI5SDEyVjMwSDExek0xNCwyOUgxNVYzMEgxNHpNMTcsMjlIMThWMzBIMTd6TTIwLDI5SDIxVjMwSDIwek0yMywyOUgyNFYzMEgyM3pNMjUsMjlIMjZWMzBIMjV6TTI2LDI5SDI3VjMwSDI2ek0yNywyOUgyOFYzMEgyN3pNMjgsMjlIMjlWMzBIMjh6TTI5LDI5SDMwVjMwSDI5ek0zMCwyOUgzMVYzMEgzMHpNMzIsMjlIMzNWMzBIMzJ6TTMzLDI5SDM0VjMwSDMzek0xLDMwSDJWMzFIMXpNMywzMEg0VjMxSDN6TTQsMzBINVYzMUg0ek01LDMwSDZWMzFINXpNNywzMEg4VjMxSDd6TTksMzBIMTBWMzFIOXpNMTAsMzBIMTFWMzFIMTB6TTExLDMwSDEyVjMxSDExek0xNSwzMEgxNlYzMUgxNXpNMTYsMzBIMTdWMzFIMTZ6TTE5LDMwSDIwVjMxSDE5ek0yMCwzMEgyMVYzMUgyMHpNMjEsMzBIMjJWMzFIMjF6TTI0LDMwSDI1VjMxSDI0ek0yNSwzMEgyNlYzMUgyNXpNMjYsMzBIMjdWMzFIMjZ6TTI5LDMwSDMwVjMxSDI5ek0zMCwzMEgzMVYzMUgzMHpNMzEsMzBIMzJWMzFIMzF6TTMyLDMwSDMzVjMxSDMyek0zMywzMEgzNFYzMUgzM3pNMSwzMUgyVjMySDF6TTMsMzFINFYzMkgzek00LDMxSDVWMzJINHpNNSwzMUg2VjMySDV6TTcsMzFIOFYzMkg3ek05LDMxSDEwVjMySDl6TTEwLDMxSDExVjMySDEwek0xMSwzMUgxMlYzMkgxMXpNMTMsMzFIMTRWMzJIMTN6TTE0LDMxSDE1VjMySDE0ek0xNSwzMUgxNlYzMkgxNXpNMTYsMzFIMTdWMzJIMTZ6TTE3LDMxSDE4VjMySDE3ek0xOCwzMUgxOVYzMkgxOHpNMjEsMzFIMjJWMzJIMjF6TTIyLDMxSDIzVjMySDIyek0yMywzMUgyNFYzMkgyM3pNMjcsMzFIMjhWMzJIMjd6TTI4LDMxSDI5VjMySDI4ek0zMSwzMUgzMlYzMkgzMXpNMSwzMkgyVjMzSDF6TTcsMzJIOFYzM0g3ek0xMSwzMkgxMlYzM0gxMXpNMTMsMzJIMTRWMzNIMTN6TTE0LDMySDE1VjMzSDE0ek0xNiwzMkgxN1YzM0gxNnpNMjAsMzJIMjFWMzNIMjB6TTIxLDMySDIyVjMzSDIxek0yMiwzMkgyM1YzM0gyMnpNMjMsMzJIMjRWMzNIMjN6TTI0LDMySDI1VjMzSDI0ek0yNiwzMkgyN1YzM0gyNnpNMjksMzJIMzBWMzNIMjl6TTMwLDMySDMxVjMzSDMwek0zMSwzMkgzMlYzM0gzMXpNMSwzM0gyVjM0SDF6TTIsMzNIM1YzNEgyek0zLDMzSDRWMzRIM3pNNCwzM0g1VjM0SDR6TTUsMzNINlYzNEg1ek02LDMzSDdWMzRINnpNNywzM0g4VjM0SDd6TTksMzNIMTBWMzRIOXpNMTEsMzNIMTJWMzRIMTF6TTEyLDMzSDEzVjM0SDEyek0xNCwzM0gxNVYzNEgxNHpNMTYsMzNIMTdWMzRIMTZ6TTE4LDMzSDE5VjM0SDE4ek0yMywzM0gyNFYzNEgyM3pNMjQsMzNIMjVWMzRIMjR6TTI1LDMzSDI2VjM0SDI1ek0yNiwzM0gyN1YzNEgyNnpNMjcsMzNIMjhWMzRIMjd6TTI4LDMzSDI5VjM0SDI4ek0zMCwzM0gzMVYzNEgzMHpNMzIsMzNIMzNWMzRIMzJ6IiBpZD0icXItcGF0aCIgZmlsbD0iIzAwMDAwMCIgZmlsbC1vcGFjaXR5PSIxIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIvPjwvc3ZnPg==" alt="QR"><div><div class="cta">Interested? Register today — it is free!</div><div class="link">bitanyanmi-mlsa.github.io/study-group-register</div><div class="foot">Scan the QR code or visit the link &nbsp;•&nbsp; Call / WhatsApp: +233 55 057 2791</div></div></div>
+</div>
+</body>
+</html>
